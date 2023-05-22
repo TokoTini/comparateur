@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.place {
+    height: 300px;;
+}
+#npy-comparateur {
+    display: flex;
+    width: 1440px;
+    min-height: 1000px;
+    margin-inline: auto;
+    background-color: rgb(54, 54, 54);
+}
+#npy-comparateur aside {
+    width: 300px;
+    background-color: white;
+}
+#npy-comparateur main {
+    flex: 1;
+}
+.noUi-touch-area {
+    position: relative;
+}
+.noUi-touch-area p {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: max-content;
+    transform: translateX(-25%);
+    border-radius: 3px;
+    padding: 10px;
+}
+#altitude {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: 150px;
+}
