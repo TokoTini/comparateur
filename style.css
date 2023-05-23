@@ -1,25 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;900&family=Poppins:wght@300;500;700;900&display=swap');
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins';
+    color: #002F6C;
 }
 .place {
     height: 300px;;
 }
 #npy-comparateur {
     display: flex;
-    width: 1440px;
+    max-width: 1440px;
     min-height: 1000px;
     margin-inline: auto;
-    background-color: rgb(54, 54, 54);
 }
 #npy-comparateur aside {
     width: 300px;
     background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 10px;
 }
 #npy-comparateur main {
     flex: 1;
 }
+
+/* input tooltip */
+/* input tooltip */
+/* input tooltip */
+/* input tooltip */
+/* input tooltip */
+/* input tooltip */
 .noUi-touch-area {
     position: relative;
 }
@@ -27,15 +40,169 @@
     position: absolute;
     top: 100%;
     left: 0;
-    width: max-content;
     transform: translateX(-25%);
+    width: max-content;
     border-radius: 3px;
     padding: 10px;
 }
-#altitude {
-    padding: 20px;
+aside div > p {
+    margin-bottom: 20px;
+    font-weight: 900;
+}
+form div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+
+
+
+.noUi-horizontal,
+.noUi-handle,
+.noUi-touch-area {
+    height: 10px !important;
+    top: unset !important;
+}
+.noUi-handle:after, .noUi-handle:before {
+    all: unset;
+}
+.noUi-handle {
+    width: 20px !important;
+    height: 20px !important;
+    border-radius: 50%;
+    transform: translateY(-30%);
+    border: none;
+    background-color: #EB6535;
+    box-shadow: unset !important;
+}
+
+.noUi-connect {
+    background: #672082;
+}
+/* 
+checkbox style
+checkbox style
+checkbox style
+checkbox style
+checkbox style
+checkbox style
+checkbox style 
+*/
+input[type="checkbox"]:focus{
+    outline:0;
+ }
+
+ input[type="checkbox"] {
+    appearance: none;
+    background-color: #D4E6FF;
+    outline: 0;
+    border: none;
+    border-radius: 26px;
+    cursor: pointer;
+    height: 20px;
+    position: relative;
+    transition: box-shadow .2s .2s, padding .15s;
+    width: 36px;
+    vertical-align: top;
+    -webkit-appearance: none;
+ }
+ input[type="checkbox"]:after {
+    background-color: white;
+    border-radius: 24px;
+    content:'';
+    display: block;
+    height: 18px;
+    width: 18px;
+    left: 1px;
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: left .1s .1s, right .15s .175s;
+ }
+ input[type="checkbox"]:checked {
+    box-shadow: inset 0 0 0 13px #EB6535;
+    padding-left: 18px;
+    transition: box-shadow .1s, padding .25s .15s;
+ }
+ input[type="checkbox"]:checked:after {
+    left: 17px;
+    right: 0;
+    transition: left .1s .1s, right .25s .175s;
+ }
+
+ #npy-comparateur main {
+     padding: 20px;
+     display: flex;
+     flex-direction: column;
+     gap: 20px;
+ }
+
+ #npy-comparateur main .card{
+    width: 100%;
+    height: max-content;
     display: flex;
     flex-direction: column;
+    padding: 20px;
     gap: 20px;
-    height: 150px;
+    box-shadow: 0px 0px 55px #D4E6FF;
+    border-radius: 10px;
+}
+#npy-comparateur main .card .desc{
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 10px 0;
+}
+#npy-comparateur main .card .desc .open-card{
+    position: absolute;
+    right: 30px;
+    width: 30px;
+    height: 30px;
+    background-color: rgb(155, 155, 196);
+}
+#npy-comparateur main .card .content {
+    display: flex;
+    gap: 30px;
+    height: 100%;
+    display: none;
+}
+#npy-comparateur main .card .content.active {
+    display: flex;
+}
+#npy-comparateur .card .img-container{
+    width: 40%;
+    height: 100%;
+}
+#npy-comparateur .card .text-content{
+    height: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#npy-comparateur .card .text-content button{
+    all: unset;
+    width: max-content;
+    padding: 10px;
+    background-color: #EB6535;
+    color: white;
+    border-radius: 6px;
+    align-self: flex-end;
+    cursor: pointer;
+}   
+#npy-comparateur .card .img-container div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 10px;
+}
+#npy-comparateur .card .img-container img{
+    min-width: 100%;
+    max-width: 100%;
+    object-fit: cover;
 }

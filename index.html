@@ -19,11 +19,169 @@
                 <div id="altitude-slider"></div>
             </div>
             <div id="#km-piste">
-                <label for="">Kilomètres de piste</label>
-                <input type="range">
+                <p>Km Piste</p>
+                <div id="km-piste-slider"></div>
+            </div>
+            <div class="zones"> 
+                <p>Zones de ski</p>
+                <form>
+                  <div>
+                    <label for="">Espaces débutants</label>
+                    <input type="checkbox" id="debutant">
+                  </div>
+                  <div>
+                    <label for="">Snowpark</label>
+                    <input type="checkbox" id="snowpark">
+                  </div>
+                  <div>
+                    <label for="">Espaces ludiques</label>
+                    <input type="checkbox" id="ludique">
+                  </div>
+                  <div>
+                    <label for="">Espaces freeride</label>
+                    <input type="checkbox" id="freeride">
+                  </div>
+                  <div>
+                    <label for="">Pistes de ski de rando</label>
+                    <input type="checkbox" id="ski-rando">
+                  </div>
+                  <div>
+                    <label for="">Espace ski de fond</label>
+                    <input type="checkbox" id="ski-fond">
+                  </div>
+                </form>
+            </div>
+            <div class="access">
+              <p>Accés & transport</p>
+              <form>
+                <div>
+                  <label for="">Parking gratuit</label>
+                  <input type="checkbox" id="free-park">
+                </div>
+                <div>
+                  <label for="">Parking couvert</label>
+                  <input type="checkbox" id="roof-park">
+                </div>
+                <div>
+                  <label for="">Navettes depuis la gare</label>
+                  <input type="checkbox" id="train-navette">
+                </div>
+                <div>
+                  <label for="">Navettes depuis l'aéroport</label>
+                  <input type="checkbox" id="plane-navette">
+                </div>
+                <div>
+                  <label for="">Navettes village > station</label>
+                  <input type="checkbox" id="village-navette">
+                </div>
+                <div>
+                  <label for="">Aire de camping-car</label>
+                  <input type="checkbox" id="camping-car">
+                </div>
+              </form>
+            </div>
+            <div class="services">
+              <p>Services</p>
+              <form>
+                  <div>
+                      <label for="">Garderie</label>
+                      <input type="checkbox" id="garderie">
+                  </div>
+                  <div>
+                    <label for="">Piste de luge</label>
+                    <input type="checkbox" id="luge">
+                  </div>
+                  <div>
+                    <label for="">Consigne à ski</label>
+                    <input type="checkbox" id="consigne">
+                  </div>
+                  <div>
+                    <label for="">Wifi public</label>
+                    <input type="checkbox" id="wifi">
+                  </div>
+                  <div>
+                    <label for="">Balneo</label>
+                    <input type="checkbox" id="balneo">
+                  </div>
+                  <div>
+                    <label for="">Boîte de nuit</label>
+                    <input type="checkbox" id="night-party">
+                  </div>
+              </form>
+            </div>
+            <div class="departement">
+              <p>Département</p>
+              <form>
+                <div>
+                    <label for="">Haute-Garonne</label>
+                    <input type="checkbox" id="haute-garonne">
+                </div>
+                <div>
+                  <label for="">Hautes-Pyrénées</label>
+                  <input type="checkbox" id="hautes-pyrenees">
+                </div>
+                <div>
+                  <label for="">Pyrénées-Atlantiques</label>
+                  <input type="checkbox" id="pyrenees-atlantiques">
+                </div>
+              </form>
+            </div>
+            <div class="localisation">
+              <p>Localisation</p>
+              <form>
+                <div>
+                    <label for="pied-de-piste">Pied de piste</label>
+                    <input type="checkbox" id="pied-de-piste">
+                </div>
+                <div>
+                  <label for="village">Village</label>
+                  <input type="checkbox" id="village">
+                </div>
+              </form>
+            </div>
+            <div>
+              <p></p>
             </div>
         </aside>
-        <main></main>
+        <main>
+          <div class="card">
+              <div class="desc">
+                  <p>Pic Du Midi</p>
+                  <p>Hautes-Pyrénées</p>
+                  <div class="open-card"></div>
+              </div>
+              <div class="content">
+                  <div class="img-container">
+                      <div>
+                        <img src="2.jpg" alt="">
+                      </div>
+                  </div>
+                  <div class="text-content">
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus vero necessitatibus omnis laborum vel molestiae aspernatur ipsum laudantium! Eum, nobis! Harum error id natus quia amet sunt facilis? Porro nobis quod doloremque voluptate repellendus earum quisquam voluptates, repellat odit sed ipsa similique labore corrupti ratione, mollitia unde quidem reprehenderit praesentium.</p>
+                      <button>Decouvrir</button>
+                  </div>
+              </div>
+          </div>
+          <div class="card">
+            <div class="desc">
+                <p>Pic Du Midi</p>
+                <p>Hautes-Pyrénées</p>
+                <div class="open-card"></div>
+            </div>
+            <div class="content">
+                <div class="img-container">
+                    <div>
+                      <img src="2.jpg" alt="">
+                    </div>
+                </div>
+                <div class="text-content">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus vero necessitatibus omnis laborum vel molestiae aspernatur ipsum laudantium! Eum, nobis! Harum error id natus quia amet sunt facilis? Porro nobis quod doloremque voluptate repellendus earum quisquam voluptates, repellat odit sed ipsa similique labore corrupti ratione, mollitia unde quidem reprehenderit praesentium.</p>
+                    <button>Decouvrir</button>
+                </div>
+            </div>
+          </div>
+          
+        </main>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/14.6.3/nouislider.min.js"></script>
