@@ -7,13 +7,13 @@
 const slider = document.getElementById('altitude-slider');
 
 noUiSlider.create(slider, {
-  start: [50, 1800], // Initial values for the handles
+  start: [1400, 2600], // Initial values for the handles
   connect: true, // Connect the handles with a colored bar
   step: 50,
   margin: 400,
   range: {
-    min: 50,
-    max: 2900
+    min: 1400,
+    max: 2600
   },
 });
 
@@ -63,12 +63,12 @@ slider.noUiSlider.on('update', function (values, handle) {
 var connectSlider = document.getElementById('km-piste-slider');
 
 noUiSlider.create(connectSlider, {
-    start: 40,
+    start: 20,
     connect: 'lower',
-    step: 50,
+    step: 10,
     range: {
-        'min': 50,
-        'max': 1800
+        'min': 0,
+        'max': 120
     }
 });
 
@@ -116,4 +116,32 @@ cardBtn.forEach(btn => {
     cardTitle.style.transition = `transform ${transitionTime}ms`;
     cardTitle.style.transform = `translateX(${pixels}px)`;
   })
+})
+
+
+
+
+
+// open/close filters
+// open/close filters
+// open/close filters
+// open/close filters
+// open/close filters
+// open/close filters
+// open/close filters
+
+let filtersBtn = document.querySelector('.filtres');
+let filters = document.querySelector('aside')
+
+filtersBtn.addEventListener('click', () => {
+  filters.classList.add('active');
+  document.body.classList.add('disabled')
+})
+
+
+let closeFilters = filters.querySelector('.controls ion-icon');
+
+closeFilters.addEventListener('click', () => {
+  filters.classList.remove('active');
+  document.body.classList.remove('disabled')
 })

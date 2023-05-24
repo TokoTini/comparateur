@@ -4,6 +4,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/14.6.3/nouislider.min.css" />
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <meta name="viewport" content="width=device-width">
     <style>
       #slider {
         width: 300px;
@@ -15,6 +16,9 @@
     <div class="place"></div>
     <div id="npy-comparateur">
         <aside>
+            <div class="controls">
+              <ion-icon name="close-outline"></ion-icon>
+            </div>
             <div id="altitude">
                 <p>Altitude</p>
                 <div id="altitude-slider"></div>
@@ -145,6 +149,10 @@
             </div>
         </aside>
         <main>
+          <div class="filtres">
+            <p>Plus de filtres</p>
+            <ion-icon name="options-outline"></ion-icon>
+          </div>
           <div class="card">
               <div class="desc">
                   <div class="card-title">
@@ -189,12 +197,35 @@
                 </div>
             </div>
           </div>
-          
+          <div class="card">
+            <div class="desc">
+                <div class="card-title">
+                  <p>Pic Du Midi</p>
+                  <p>Hautes-Pyrénées</p>
+                </div>
+                <div class="open-card">
+                  <i class="fa-thin fa fa-chevron-down"></i>
+                </div>
+            </div>
+            <div class="content">
+                <div class="img-container">
+                    <div>
+                      <img src="2.jpg" alt="">
+                    </div>
+                </div>
+                <div class="text-content">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus vero necessitatibus omnis laborum vel molestiae aspernatur ipsum laudantium! Eum, nobis! Harum error id natus quia amet sunt facilis? Porro nobis quod doloremque voluptate repellendus earum quisquam voluptates, repellat odit sed ipsa similique labore corrupti ratione, mollitia unde quidem reprehenderit praesentium.</p>
+                    <button>Decouvrir</button>
+                </div>
+            </div>
+          </div>
         </main>
     </div>
-
+    <div class="place"></div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/14.6.3/nouislider.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wnumb/1.2.0/wNumb.min.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script src="js.js">
      
     </script>

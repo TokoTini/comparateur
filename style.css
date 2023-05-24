@@ -7,7 +7,10 @@
     color: #002F6C;
 }
 .place {
-    height: 300px;;
+    height: 500px;;
+}
+body.disabled {
+    overflow: hidden;
 }
 #npy-comparateur {
     display: flex;
@@ -22,13 +25,15 @@
     overflow-y: scroll;
     flex-direction: column;
     gap: 50px;
-    padding: 5px;
+    padding: 10px;
     border: 15px solid white;
     box-shadow: 0px 0px 55px #D4E6FF;
     border-radius: 15px;
     overflow: auto;
     scrollbar-width: thin; /* Width of the scrollbar */
     scrollbar-color: transparent transparent; /* Color of the thumb and track */
+    position: sticky;
+    top: 50px;
 }
 /* Hide the scrollbar */
 #npy-comparateur aside::-webkit-scrollbar {
@@ -227,6 +232,7 @@ main container
     width: 30px;
     height: 30px;
     transition: transform 250ms;
+    cursor: pointer;
 }
 #npy-comparateur main .card .desc .open-card.rotated{
     transform: rotate(-180deg);
@@ -276,4 +282,83 @@ main container
     min-width: 100%;
     max-width: 100%;
     object-fit: cover;
+}
+
+#npy-comparateur aside .controls {
+    display: none !important;
+    align-self: flex-end;
+    background-color: white;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 50px;
+    z-index: 100;
+    box-shadow: 0px 0px 30px #D4E6FF;
+    padding: 0 5%;
+}
+#npy-comparateur aside .controls ion-icon {
+    font-size: 40px;
+    cursor: pointer;
+}
+
+#npy-comparateur main .filtres {
+    display: none;
+    gap: 10px;
+    align-items: center;
+    box-shadow: 0px 0px 55px #D4E6FF;
+    width: max-content;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#npy-comparateur main .filtres ion-icon{
+    /* display: none; */
+    font-size: 28px;
+}
+
+@media only screen and (max-width: 768px) {
+    #npy-comparateur aside {
+      display: none;
+      position: relative;
+    }
+    #npy-comparateur {
+        width: 100%;
+      }
+      #npy-comparateur main{
+        max-width: 90%;
+        margin-inline: auto;
+        padding: 0;
+      }
+    #npy-comparateur aside #altitude{
+        margin-top: 50px;
+      }
+    #npy-comparateur main .filtres {
+        display: flex;
+        position: sticky;
+        background-color: white;
+        z-index: 5;
+        top: 10px;
+    }
+    #npy-comparateur aside.active {
+        display: flex;
+        position: fixed;
+        max-height: unset;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: white;
+        border-radius: unset;
+        z-index: 10;
+        padding: 5% 8%;
+    }
+    #npy-comparateur aside.active .controls{
+        display: flex !important;
+    }
 }
