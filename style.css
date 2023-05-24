@@ -61,6 +61,7 @@
     width: max-content;
     border-radius: 3px;
     font-weight: 400;
+    z-index: 1;
 }
 aside div > p {
     margin-bottom: 20px;
@@ -166,7 +167,14 @@ input[type="checkbox"]:focus{
     right: 0;
     transition: left .1s .1s, right .25s .175s;
  }
-
+/* 
+main container
+main container
+main container
+main container
+main container
+main container 
+*/
  #npy-comparateur main {
     flex: 1;
     padding: 0 50px;
@@ -175,6 +183,8 @@ input[type="checkbox"]:focus{
     gap: 30px;
  }
 
+
+ /* card style */
  #npy-comparateur main .card{
     width: 100%;
     height: max-content;
@@ -185,6 +195,7 @@ input[type="checkbox"]:focus{
     box-shadow: 0px 0px 55px #D4E6FF;
     border-radius: 10px;
 }
+/* card description */
 #npy-comparateur main .card .desc{
     position: relative;
     display: flex;
@@ -218,13 +229,12 @@ input[type="checkbox"]:focus{
     transition: transform 250ms;
 }
 #npy-comparateur main .card .desc .open-card.rotated{
-
     transform: rotate(-180deg);
-
 }
 #npy-comparateur main .card .desc .open-card .fa-chevron-down{
     color: #EB6535;
 }
+/* img and text */
 #npy-comparateur main .card .content {
     display: flex;
     gap: 30px;
