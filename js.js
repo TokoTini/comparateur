@@ -9,7 +9,7 @@ const slider = document.getElementById('altitude-slider');
 noUiSlider.create(slider, {
   start: [50, 1800], // Initial values for the handles
   connect: true, // Connect the handles with a colored bar
-  step: 100,
+  step: 50,
   margin: 400,
   range: {
     min: 50,

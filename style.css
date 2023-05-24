@@ -110,7 +110,10 @@ slider style
 .noUi-connect {
     background: #672082;
 }
-
+#altitude-slider,
+#km-piste-slider {
+    width: 92%;
+}
 /* 
 checkbox style
 checkbox style
