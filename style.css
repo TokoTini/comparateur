@@ -215,10 +215,12 @@ input[type="checkbox"]:focus{
     right: 30px;
     width: 30px;
     height: 30px;
+    transition: transform 250ms;
 }
 #npy-comparateur main .card .desc .open-card.rotated{
-    transform: rotate(180deg);
-    transition: rotate .250ms;
+
+    transform: rotate(-180deg);
+
 }
 #npy-comparateur main .card .desc .open-card .fa-chevron-down{
     color: #EB6535;
